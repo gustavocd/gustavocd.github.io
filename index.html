@@ -1,23 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<title>Mi portafolio</title>
-	<link rel="stylesheet" type="text/css" href="css/flexboxgrid.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/estilos.css">
-</head>
-<body>
-	<div class="container">
-		<header>
-			<ul class="menu">
-				<li><a href="#"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i>Contact</a></li>
-				<li><a href="#"><i class="fa fa-user fa-lg" aria-hidden="true"></i>About me</a></li>
-				<li><a href="#"><i class="fa fa-briefcase fa-lg" aria-hidden="true"></i>My projects</a></li>
-				<li class="active"><a href="#"><i class="fa fa-home fa-lg" aria-hidden="true"></i>Home</a></li>
-			</ul>
-		</header>
-	</div>
-</body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Web Developer</title>
+    <link rel="stylesheet" href="https://file.myfontastic.com/tUDSeAN9YtEfpFJnhgAWP3/icons.css">
+    <link rel="stylesheet" href="/css/styles.css">
+  </head>
+  <body>
+    <header>
+      <nav class="main-nav"><a class="logo" href="/">Gustavo Castillo</a><i class="icon-bars" id="menu"></i>
+        <ul class="menu">
+          <li class="menu--item"><a class="menu--item--link" href="/">Portfolio</a></li>
+          <li class="menu--item"><a class="menu--item--link" href="/">About</a></li>
+          <li class="menu--item"><a class="menu--item--link" href="/">Contact</a></li>
+        </ul>
+      </nav><img class="profile" src="/images/profile.png">
+      <h1 class="title">Web developer</h1>
+      <p class="tech">Javascript, PHP, Go, NodeJS, and More</p>
+    </header>
+    <main>
+      <div class="portfolio">
+        <h2 class="portfolio--title">Portfolio</h2>
+        <div class="portfolio--item"><img src="/images/cabin.png"></div>
+        <div class="portfolio--item"><img src="/images/cake.png"></div>
+        <div class="portfolio--item"><img src="/images/circus.png"></div>
+        <div class="portfolio--item"><img src="/images/game.png"></div>
+        <div class="portfolio--item"><img src="/images/safe.png"></div>
+        <div class="portfolio--item"><img src="/images/submarine.png"></div>
+      </div>
+      <div class="about">
+        <h2 class="about--title">About</h2>
+        <p class="about--description">Hey there! my name is Gustavo Castillo and I am a web developer who like to build awesome websites using technologies such as Javascript, CSS and HTML5. If you want to be owner of a beatiful website, I can help you! just contact me and tell me about what you have in mind.</p>
+      </div>
+      <div class="contact">
+        <h2 class="contact--title">Contact me</h2>
+        <form class="form" action="#" method="POST" autocomplete="off">
+          <input class="form--item" type="text" name="name" placeholder="Name">
+          <input class="form--item" type="email" name="email" placeholder="Email Address">
+          <input class="form--item" type="text" name="phone" placeholder="Phone Number">
+          <textarea class="form--item" cols="20" rows="10" placeholder="Message"></textarea>
+          <input class="form--submit" type="submit" value="Send">
+        </form>
+      </div>
+    </main>
+    <footer class="footer">
+      <h3 class="footer--title">Around the web</h3>
+      <div class="footer--socials"><a class="footer--socials--link" href="https://twitter.com/Gucady" target="_blank"><i class="icon-twitter"></i></a><a class="footer--socials--link" href="https://www.youtube.com/channel/UCWg1EG_YiM_ap_6Vphcj3pg" target="_blank"><i class="icon-youtube"></i></a><a class="footer--socials--link" href="https://github.com/gustavocd" target="_blank"><i class="icon-github"></i></a><a class="footer--socials--link" href="#" onclick="return false;" target="_blank"><i class="icon-envelope"></i></a><a class="footer--socials--link" href="https://plus.google.com/u/0/+GustavoDiaz1993" target="_blank"><i class="icon-google-plus"></i></a></div>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
 </html>
