@@ -1,0 +1,44 @@
+.contact
+    margin-top: 4em
+    padding: 0 .5em
+    +desde($large)        
+        width: 700px
+        margin-right: auto
+        margin-left: auto        
+
+    &--title
+        color: $c-contact-title
+        text-transform: uppercase
+        text-align: center
+        margin-bottom: 2em
+
+.form
+    &--item
+        border: 0
+        font-size: 1.2em
+        padding: .7em .5em
+        margin-bottom: 1em
+        transition: all .5s
+        border-bottom: 1px solid grey
+
+        &:focus
+            outline: none
+            border-bottom: 1px solid $bg-about-section
+
+    &--submit
+        border: 0
+        width: 100%
+        text-transform: uppercase
+        color: white
+        cursor: pointer
+        padding: .8em 1em
+        transition: all .5s
+        background: $bg-button-form
+
+        +desde($medium)
+            width: 50%            
+            margin-right: auto
+            margin-left: auto
+
+        &:hover
+            background: darken($bg-button-form, 25)

@@ -1,0 +1,64 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")
+        meta(http-equiv="X-UA-Compatible" content="IE-edge")
+        meta(name="viewport" content="width=device-width,initial-scale=1")
+        title Web Developer
+        link(rel="stylesheet" href="https://file.myfontastic.com/tUDSeAN9YtEfpFJnhgAWP3/icons.css")
+        link(rel="stylesheet" href="/css/styles.css")
+    body
+        header
+            nav.main-nav
+                a(href="/" class="logo") Gustavo Castillo
+                i(class="icon-bars" id="menu")
+                ul.menu
+                    li.menu--item
+                        a(href="/" class="menu--item--link") Portfolio
+                    li.menu--item
+                        a(href="/" class="menu--item--link") About
+                    li.menu--item
+                        a(href="/" class="menu--item--link") Contact
+            img(src="/images/profile.png" class="profile")
+            h1.title Web developer
+            p.tech Javascript, PHP, Go, NodeJS, and More
+        main
+            .portfolio
+                h2.portfolio--title Portfolio
+                .portfolio--item
+                    img(src="/images/cabin.png")
+                .portfolio--item
+                    img(src="/images/cake.png")
+                .portfolio--item
+                    img(src="/images/circus.png")
+                .portfolio--item
+                    img(src="/images/game.png")
+                .portfolio--item
+                    img(src="/images/safe.png")
+                .portfolio--item
+                    img(src="/images/submarine.png")
+            .about
+                h2.about--title About
+                p.about--description Hey there! my name is Gustavo Castillo and I am a web developer who like to build awesome websites using technologies such as Javascript, CSS and HTML5. If you want to be owner of a beatiful website, I can help you! just contact me and tell me about what you have in mind.
+            .contact
+                h2.contact--title Contact me
+                form(class="form" action="#" method="POST" autocomplete="off")
+                    input(type="text" class="form--item" name="name" placeholder="Name")
+                    input(type="email" class="form--item" name="email" placeholder="Email Address")
+                    input(type="text" class="form--item" name="phone" placeholder="Phone Number")
+                    textarea(cols="20" rows="10" class="form--item" placeholder="Message")
+                    input(type="submit" class="form--submit" value="Send")
+        footer.footer
+            h3.footer--title Around the web
+            .footer--socials
+                a(href="https://twitter.com/Gucady" target="_blank" class="footer--socials--link")
+                    i(class="icon-twitter")
+                a(href="https://www.youtube.com/channel/UCWg1EG_YiM_ap_6Vphcj3pg" target="_blank" class="footer--socials--link")
+                    i(class="icon-youtube")
+                a(href="https://github.com/gustavocd" target="_blank" class="footer--socials--link")
+                    i(class="icon-github")
+                a(href="#" onclick="return false;" target="_blank" class="footer--socials--link")
+                    i(class="icon-envelope")
+                a(href="https://plus.google.com/u/0/+GustavoDiaz1993" target="_blank" class="footer--socials--link")
+                    i(class="icon-google-plus")
+        script(src="/js/main.js")

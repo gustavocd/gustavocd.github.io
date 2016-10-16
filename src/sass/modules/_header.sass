@@ -1,0 +1,84 @@
+header
+    width: 100%
+    text-align: center
+    padding-bottom: 2em
+    background: $bg-header
+    +desde($large)
+        height: 100vh
+
+.main-nav
+    width: 100%
+    height: 50px
+    display: flex
+    position: fixed
+    top: 0
+    left: 0
+    background: $bg-nav
+    align-items: center
+    -ms-align-items: center
+    .icon-bars
+        margin-left: auto
+        margin-right: .8em
+        color: $c-logo
+        cursor: pointer
+
+        +desde($large)
+            display: none
+        &:hover
+            color: $bg-header
+
+.logo
+    color: $c-logo
+    padding: .2em 1em
+    text-transform: uppercase
+
+.menu
+    top: 50px
+    width: 100%
+    display: none
+    padding-top: .8em
+    position: absolute
+    transition: all 2s
+    background: $bg-nav
+    border-top: 2px solid white
+
+    +desde($large)
+        width: 30%        
+        display: flex
+        position: static
+        margin-left: auto 
+        border-top: none
+
+    &--item     
+        text-align: left
+
+        +desde($large)
+            text-align: center
+
+        &--link
+            color: $c-item-menu
+            display: inline-block
+            padding: 0 1em
+            text-transform: uppercase
+            margin-bottom: .8em
+
+            &:hover
+                color: darken($c-item-menu, 20)
+
+.profile
+    margin-top: 6em
+
+.title, .tech
+    color: $c-logo
+    text-align: center
+
+.title
+    text-transform: uppercase
+    margin-top: 1em
+
+.tech
+    width: 60%
+    margin: 0 auto
+    
+.show-menu
+    display: block

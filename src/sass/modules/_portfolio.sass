@@ -1,0 +1,26 @@
+.portfolio--title
+    text-transform: uppercase
+    color: $c-portfolio-title
+    text-align: center
+    font-size: 30px
+    margin-top: 2em
+    padding: 1em 0
+
+.portfolio
+    padding: 1em .8em
+    +desde($medium)
+        padding: 1em 0
+        text-align: center
+    +desde($large)
+        padding: 1em 4em
+
+    &--item
+        margin-bottom: 1.8em
+
+        +desde($medium)
+            width: 49%
+            display: inline-block
+            padding: 0 .5em
+
+        +desde($large)
+            width: 33%
